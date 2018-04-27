@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <!-- CSS Files comes here -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
-    <link href="css/colors/green.css" rel="stylesheet" media="screen">
-    <link href="css/responsive.css" rel="stylesheet" media="screen">
-
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/colors/green.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="screen">
+    
     <!-- Google fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,700" rel="stylesheet" type="text/css">
     
     <!-- Modernizer and IE specyfic files -->  
-    <script src="js/modernizr.custom.js"></script>
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
       
   </head>
   
@@ -31,12 +32,12 @@
     <div class="container">
         <div class="row">
             <div id="homescreen" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-                 <div id="logo"><a href="#home"><img src="images/logo.png" alt="logo"></a></div>
+                 <div id="logo"><a href="#home"><img src="{% static 'images/logo.png' %}" alt="logo"></a></div>
                  <div id="logo_header"><h5>Landing page</h5></div>
                  <div id="slogan"><h1>Hype Landing Page is the best way to
                      present your beautiful mobile app.</h1></div>
                  <a href="#" class="cta2" id="button_download">Download Now</a>
-                 <img src="images/homescreen.png" class="img-responsive" id="home_image" alt="img">
+                 <img src="{% static 'images/homescreen.png' %}" class="img-responsive" id="home_image" alt="img">
             </div> <div class="clearfix"></div>
         </div>
     </div>
@@ -96,8 +97,8 @@
         <div class="container">
             <div class="row"  >
                 <div class="col-sm-6 col-md-6  col-lg-6">
-                  <img src="images/features1b.png" class="img-responsive image_back" id="features1a_image" alt="img">
-                  <img src="images/features1a.png" class="img-responsive image_front" id="features1b_image" alt="img">
+                  <img src="{% static 'images/features1b.png' %}" class="img-responsive image_back" id="features1a_image" alt="img">
+                  <img src="{% static 'images/features1a.png' %}" class="img-responsive image_front" id="features1b_image" alt="img">
                 </div>
                 
                 <div class="col-sm-6 col-md-6 col-lg-6" id="features_1_content">
@@ -165,8 +166,8 @@
                 
                 
                 <div class="col-sm-6 col-md-6  col-lg-6" >
-                    <img src="images/features2b.png" class="img-responsive image_back" id="features2a_image" alt="img">
-                    <img src="images/features2a.png" class="img-responsive image_front" id="features2b_image" alt="img">
+                    <img src="{% static 'images/features2b.png' %}" class="img-responsive image_back" id="features2a_image" alt="img">
+                    <img src="{% static 'images/features2a.png' %}" class="img-responsive image_front" id="features2b_image" alt="img">
                 </div>
 
             </div>
@@ -207,7 +208,7 @@
                 </div>
             
                 <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_center">
-                    <img src="images/features3.png" class="img-responsive" id="features3_image" alt="img">
+                    <img src="{% static 'images/features3.png' %}" class="img-responsive" id="features3_image" alt="img">
                 </div>
 
                 <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_right">
