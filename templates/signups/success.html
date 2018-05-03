@@ -7,10 +7,13 @@
 {% block body %}
   <div class="container">
     <div class="row">
-      <p>
-        {% blocktrans %}Thanks for signing up.{% endblocktrans %}</p>
-      <p>
-        <a href="{% url 'home' %}">{% blocktrans %}Back to startpage.{% endblocktrans %}</a></p>
+      <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+        <h2>{% blocktrans %}Thanks{% endblocktrans %}</h2>
+        <p>
+          {% blocktrans %}Thanks for signing up.{% endblocktrans %}</p>
+        <p>
+          <a href="{% url 'home' %}">{% blocktrans %}Back to startpage{% endblocktrans %}</a></p>
+      </div>
     </div>
   </div>
 {% endblock %}

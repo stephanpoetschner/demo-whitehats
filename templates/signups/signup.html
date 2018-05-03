@@ -7,12 +7,22 @@
 {% block body %}
   <div class="container">
     <div class="row">
-      <form method="post">
-        {% csrf_token %}
-        {{ signup_form }}
-        <button type="submit" class="btn btn-primary">
-          {% trans "Save" %}</button>
-      </form>
+      <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+
+        <h2>{% blocktrans %}Signup Now{% endblocktrans %}</h2>
+        <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
+        </p>
+
+        <form method="post"
+          class="signup-form">
+          {% csrf_token %}
+
+          {{ signup_form }}
+
+          <button type="submit" class="cta2">
+            {% trans "Save" %}</button>
+        </form>
+      </div>
     </div>
   </div>
 
