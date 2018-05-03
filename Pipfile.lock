@@ -24,6 +24,14 @@
             "index": "pypi",
             "version": "==1.11.13"
         },
+        "djangorestframework": {
+            "hashes": [
+                "sha256:1f6baf40ed456ed2af6bd1a4ff8bbc3503cebea16509993aea2b7085bc097766",
+                "sha256:9f9e94e8d22b100ed3a43cee8c47a7ff7b185e778a1f2da9ec5c73fc4e081b87"
+            ],
+            "index": "pypi",
+            "version": "==3.7.7"
+        },
         "gunicorn": {
             "hashes": [
                 "sha256:7ef2b828b335ed58e3b64ffa84caceb0a7dd7c5ca12f217241350dec36a1d5dc",

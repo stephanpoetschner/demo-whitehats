@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "<1.12,>=1.11"
 gunicorn = "*"
+djangorestframework = "<3.8,>=3.7"
 
 [dev-packages]
 ipdb = "*"
