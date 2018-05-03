@@ -4,25 +4,28 @@
 
 {% block page_title %}{% blocktrans %}Hype - Mobile App Landing Page{% endblocktrans %}{% endblock %}
 
-{% block body %}
+{% block header %}
   <!--###############################-->
   <!--HOME ##########################-->
   <!--###############################-->
 
-  <section id="home">
-  <div class="container">
-      <div class="row">
-          <div id="homescreen" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-               <div id="logo"><a href="#home"><img src="{% static 'images/logo.png' %}" alt="{% trans "logo" %}"></a></div>
-               <div id="logo_header"><h5>{% trans "Landing page" %}</h5></div>
-               <div id="slogan"><h1>{% blocktrans %}Hype Landing Page is the best way to
-                   present your beautiful mobile app.{% endblocktrans %}</h1></div>
-               <a href="{% url "signup" %}" class="cta2">{% blocktrans %}Signup Now{% endblocktrans %}</a>
-               <img src="{% static 'images/homescreen.png' %}" class="img-responsive" id="home_image" alt="{% trans "img" %}">
-          </div> <div class="clearfix"></div>
-      </div>
-  </div>
+  <section id="home" class="header">
+    <div class="container">
+        <div class="row">
+            <div id="homescreen" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                 <div id="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="{% trans "logo" %}"></a></div>
+                 <div id="logo_header"><h5>{% trans "Landing page" %}</h5></div>
+                 <div id="slogan"><h1>{% blocktrans %}Hype Landing Page is the best way to
+                     present your beautiful mobile app.{% endblocktrans %}</h1></div>
+                 <a href="{% url "signup" %}" class="cta2">{% blocktrans %}Signup Now{% endblocktrans %}</a>
+                 <img src="{% static 'images/homescreen.png' %}" class="img-responsive" id="home_image" alt="{% trans "img" %}">
+            </div> <div class="clearfix"></div>
+        </div>
+    </div>
   </section>
+{% endblock %}
+
+{% block content %}
 
 
   <!--###############################-->

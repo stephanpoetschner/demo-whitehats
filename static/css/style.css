@@ -530,7 +530,7 @@ hr {
 /*NEWSLETTER ###########################*/
 /*######################################*/
 
-#footer {
+.footer {
   padding-top:5.4rem;
   padding-bottom:6.5rem;
   background:white;
@@ -540,7 +540,7 @@ hr {
   text-align:center;
 }
 
-#footer h2, #footer p {
+.footer h2, .footer p {
   color:white;
 }
 
@@ -935,4 +935,9 @@ iframe {
 }
 .form-group small {
   display: block;
+}
+
+.header {
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
 }
