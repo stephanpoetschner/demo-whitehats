@@ -1,1 +1,6 @@
-Hello world
+{% load i18n %}
+<form method="post">
+  {% csrf_token %}
+  {{ signup_form }}
+  <button type="submit">{% trans "Save" %}</button>
+</form>
