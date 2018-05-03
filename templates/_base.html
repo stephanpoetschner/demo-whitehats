@@ -1,0 +1,30 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block page_title %}{% blocktrans %}Hype - Mobile App Landing Page{% endblocktrans %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS Files comes here -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/colors/green.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="screen">
+
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,700" rel="stylesheet" type="text/css">
+
+    <!-- Modernizer and IE specyfic files -->
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+
+  </head>
+
+
+  <body>
+    {% include "landingpage/icons.svg" %}
+
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
