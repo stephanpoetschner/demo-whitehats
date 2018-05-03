@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,12 +32,12 @@
     <div class="container">
         <div class="row">
             <div id="homescreen" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-                 <div id="logo"><a href="#home"><img src="{% static 'images/logo.png' %}" alt="logo"></a></div>
-                 <div id="logo_header"><h5>Landing page</h5></div>
-                 <div id="slogan"><h1>Hype Landing Page is the best way to
-                     present your beautiful mobile app.</h1></div>
-                 <a href="#" class="cta2" id="button_download">Download Now</a>
-                 <img src="{% static 'images/homescreen.png' %}" class="img-responsive" id="home_image" alt="img">
+                 <div id="logo"><a href="#home"><img src="{% static 'images/logo.png' %}" alt="{% trans "logo" %}"></a></div>
+                 <div id="logo_header"><h5>{% trans "Landing page" %}</h5></div>
+                 <div id="slogan"><h1>{% blocktrans %}Hype Landing Page is the best way to
+                     present your beautiful mobile app.{% endblocktrans %}</h1></div>
+                 <a href="{% trans "#download" %}" class="cta2" id="button_download">{% blocktrans %}Download Now{% endblocktrans %}</a>
+                 <img src="{% static 'images/homescreen.png' %}" class="img-responsive" id="home_image" alt="{% trans "img" %}">
             </div> <div class="clearfix"></div>
         </div>
     </div>
@@ -54,8 +54,8 @@
             <div class="row" id="about_intro">
                 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
                     
-                    <h2>Buildt with Bootstrap v3.0</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2>{% blocktrans %}Built with Bootstrap v3.0{% endblocktrans %}</h2>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                     
                 </div>
@@ -65,22 +65,22 @@
                 
                 <div class="col-sm-4 col-md-4 col-lg-4" id="service_1">
                     <svg viewBox="0 0 32 32" class="services_icon"><use xlink:href="#compass"></use></svg>
-                    <h3>Fully Responsive</h3>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h3>{% blocktrans %}Fully Responsive{% endblocktrans %}</h3>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                 </div>
                 
                 <div class="col-sm-4 col-md-4 col-lg-4" id="service_2">
                     <svg viewBox="0 0 32 32" class="services_icon"><use xlink:href="#map"></use></svg>
-                    <h3>134 SVG Icons</h3>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h3>{% blocktrans %}134 SVG Icons{% endblocktrans %}</h3>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                 </div>
                 
                 <div class="col-sm-4 col-md-4 col-lg-4" id="service_3">
                     <svg viewBox="0 0 32 32" class="services_icon"><use xlink:href="#calendar"></use></svg>
-                    <h3>HTML5 &amp; CSS3</h3>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h3>{% blocktrans %}HTML5 &amp; CSS3{% endblocktrans %}</h3>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                 </div>
                 
@@ -97,20 +97,20 @@
         <div class="container">
             <div class="row"  >
                 <div class="col-sm-6 col-md-6  col-lg-6">
-                  <img src="{% static 'images/features1b.png' %}" class="img-responsive image_back" id="features1a_image" alt="img">
-                  <img src="{% static 'images/features1a.png' %}" class="img-responsive image_front" id="features1b_image" alt="img">
+                  <img src="{% static 'images/features1b.png' %}" class="img-responsive image_back" id="features1a_image" alt="{% trans "img" %}">
+                  <img src="{% static 'images/features1a.png' %}" class="img-responsive image_front" id="features1b_image" alt="{% trans "img" %}">
                 </div>
                 
                 <div class="col-sm-6 col-md-6 col-lg-6" id="features_1_content">
-                    <h2>Detailed documentation</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2>{% blocktrans %}Detailed documentation{% endblocktrans %}</h2>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                     <div class="feature">
                         <svg viewBox="0 0 32 32" class="feature_icon">
                         <use xlink:href="#graph-pie1"></use></svg>
                         <div>
-                            <h4>Beautiful, modern design</h4>
-                            <p>Epsum factorial non deposit quid pro quo<br>hic escorol.</p>
+                            <h4>{% blocktrans %}Beautiful, modern design{% endblocktrans %}</h4>
+                            <p>{% blocktrans %}Epsum factorial non deposit quid pro quo<br>hic escorol.{% endblocktrans %}</p>
                         </div>
                     </div>
                     
@@ -118,8 +118,8 @@
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#joystick"></use></svg>
                         <div>
-                            <h4>Easy to set up</h4>
-                            <p>Epsum factorial non depositquid pro quo<br>hic escorol.</p>
+                            <h4>{% blocktrans %}Easy to set up{% endblocktrans %}</h4>
+                            <p>{% blocktrans %}Epsum factorial non depositquid pro quo<br>hic escorol.{% endblocktrans %}</p>
                         </div>
                     </div>
 
@@ -141,15 +141,15 @@
             <div class="row">
                 
                 <div class="col-sm-6 col-md-6 col-lg-6" id="features_2_content">
-                    <h2>All you want from an app</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2>{% blocktrans %}All you want from an app{% endblocktrans %}</h2>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                     <div class="feature">
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#ribbon"></use></svg>
                         <div>
-                            <h4>Video background</h4>
-                            <p>Epsum factorial non deposit quid pro quo<br>hic escorol.</p>
+                            <h4>{% blocktrans %}Video background{% endblocktrans %}</h4>
+                            <p>{% blocktrans %}Epsum factorial non deposit quid pro quo<br>hic escorol.{% endblocktrans %}</p>
                         </div>
                     </div>
                     
@@ -157,8 +157,8 @@
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#rotate"></use></svg>
                         <div>
-                            <h4>Cool animations</h4>
-                            <p>Epsum factorial non depositquid pro quo<br>hic escorol.</p>
+                            <h4>{% blocktrans %}Cool animations{% endblocktrans %}</h4>
+                            <p>{% blocktrans %}Epsum factorial non depositquid pro quo<br>hic escorol.{% endblocktrans %}</p>
                         </div>
                     </div>
                     
@@ -166,8 +166,8 @@
                 
                 
                 <div class="col-sm-6 col-md-6  col-lg-6" >
-                    <img src="{% static 'images/features2b.png' %}" class="img-responsive image_back" id="features2a_image" alt="img">
-                    <img src="{% static 'images/features2a.png' %}" class="img-responsive image_front" id="features2b_image" alt="img">
+                    <img src="{% static 'images/features2b.png' %}" class="img-responsive image_back" id="features2a_image" alt="{% trans "img" %}">
+                    <img src="{% static 'images/features2a.png' %}" class="img-responsive image_front" id="features2b_image" alt="{% trans "img" %}">
                 </div>
 
             </div>
@@ -184,8 +184,8 @@
         <div class="container">
             <div class="row" id="features_3_intro">
                 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
-                    <h2>Awesome Features</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2>{% blocktrans %}Awesome Features{% endblocktrans %}</h2>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                 </div>
             </div>
@@ -194,14 +194,14 @@
                 <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_left">
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4>{% blocktrans %}Awesome Features{% endblocktrans %}</h4>
+                        <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                         </p>
                     </div>
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4>{% blocktrans %}Awesome Features{% endblocktrans %}</h4>
+                        <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                         </p>
                     </div>
                     
@@ -214,14 +214,14 @@
                 <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_right">
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4>{% blocktrans %}Awesome Features{% endblocktrans %}</h4>
+                        <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                         </p>
                     </div>
                     
                     <div class="feature">
-                        <h4>Awesome Features</h4>
-                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                        <h4>{% blocktrans %}Awesome Features{% endblocktrans %}</h4>
+                        <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                         </p>
                     </div>
                     
@@ -243,11 +243,11 @@
             <div class="row" id="newsletter">
                 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
                     
-                    <h2>Download Now</h2>
-                    <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+                    <h2>{% blocktrans %}Download Now{% endblocktrans %}</h2>
+                    <p>{% blocktrans %}Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.{% endblocktrans %}
                     </p>
                     
-                     <a href="#" class="cta2" id="button_download">Download Now</a>
+                     <a href="#" class="cta2" id="button_download">{% blocktrans %}Download Now{% endblocktrans %}</a>
                     
                 </div>
             </div>
@@ -255,7 +255,7 @@
            <div class="row">
                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="share">
                    
-                   <p>Copyright &copy; 2014 Hype</p>
+                   <p>{% blocktrans %}Copyright &copy; 2014 Hype{% endblocktrans %}</p>
      
                </div>
            </div>
