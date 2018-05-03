@@ -1,0 +1,13 @@
+{% load i18n %}
+
+{% comment %}
+form
+{% endcomment %}
+
+{{ form.non_field_errors }}
+
+{% for hidden in form.hidden_fields %}
+  {{ hidden }}
+{% endfor %}
+
+{% include "signups/_includes/_field_renderer.html" with field=form.email %}

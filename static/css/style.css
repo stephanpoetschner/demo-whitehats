@@ -933,3 +933,6 @@ iframe {
 .form-group {
   margin: 1rem 0;
 }
+.form-group small {
+  display: block;
+}

@@ -1,0 +1,25 @@
+{% load i18n %}
+{% comment %}
+field
+{% endcomment %}
+
+<div class="form-group {% if field.errors %} is-invalid{% endif %}">
+
+    {{ field.label_tag }}
+
+    {% if not field.field.required %}
+      <small style="opacity: .6;">{% trans "(optional)" %}</small>{% endif %}
+
+    {{ field }}
+
+    {% if field.errors %}
+      <small class="form-text">
+        {% for error in field.errors %}
+          {{ error }}<br>
+        {% endfor %}
+      </small>
+    {% elif field.help_text %}
+      <small class="form-text">{{ field.help_text }}</small>
+    {% endif %}
+
+</div>

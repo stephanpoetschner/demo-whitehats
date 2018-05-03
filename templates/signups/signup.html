@@ -17,10 +17,10 @@
           class="signup-form">
           {% csrf_token %}
 
-          {{ signup_form }}
+          {% include "signups/_includes/_form_renderer.html" with form=signup_form %}
 
-          <button type="submit" class="cta2">
-            {% trans "Save" %}</button>
+          <button type="submit" class="btn btn-primary">
+            {% trans "Submit" %}</button>
         </form>
       </div>
     </div>
